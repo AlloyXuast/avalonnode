@@ -12,7 +12,7 @@ export DB_URL=mongodb://localhost:27017
 
 # Directory to folder containing blocks.bson file
 # Directory to folder containing blocks.bson file
-export BLOCKS_DIR=
+export BLOCKS_DIR=/opt/avalon/blocks/
 
 # Peering configuration
 #export OFFLINE=1
