@@ -1,30 +1,31 @@
 #!/bin/bash
 
 # Ports configuration
-#export HTTP_PORT=3001
+export HTTP_PORT=4001
 #export P2P_PORT=6001
 #export HTTP_HOST=0.0.0.0
 #export P2P_HOST=0.0.0.0
 
 # MongoDB configuration
 #export DB_NAME=avalon
-#export DB_URL=mongodb://localhost:27017
+export DB_URL=mongodb://localhost:27017
 
 # Directory to folder containing blocks.bson file
-#export BLOCKS_DIR=
+# Directory to folder containing blocks.bson file
+export BLOCKS_DIR=
 
 # Peering configuration
 #export OFFLINE=1
 #export NO_DISCOVERY=1
-#export DISCOVERY_EXCLUDE=dtube
+export DISCOVERY_EXCLUDE="dtube,tibfox,techcoderx,sagar.kothari.88,nannal,devdeckardcain94,d0ntst0pmen0w"
 
 # Enable more modules
-#export NOTIFICATIONS=1
-#export RANKINGS=1
-#export CONTENTS=1
-#export LEADER_STATS=1
-#export TX_HISTORY=1
-#export PLAYLIST_JSON=1
+export NOTIFICATIONS=1
+export RANKINGS=1
+export CONTENTS=1
+export LEADER_STATS=1
+export TX_HISTORY=1
+export PLAYLIST_JSON=1
 
 # Cache warmup option
 export WARMUP_ACCOUNTS=100000
@@ -47,8 +48,8 @@ export REPLAY_OUTPUT=10000
 #export REBUILD_NO_VALIDATE=1
 
 # default peers to connect with on startup
-export PEERS=
-export MAX_PEERS=20
+export PEERS="ws://s10.fso.ovh:6002,ws://avalon.d00k13.com:6001,ws://194.233.75.39:6001,ws://34.65.228.228:6001,ws://avalon.d.tube:6001,ws://35.203.60.208:6001"
+export MAX_PEERS=50
 
 # your user and keys (only useful for active node owners)
 export NODE_OWNER=dtube
